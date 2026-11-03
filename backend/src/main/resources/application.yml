@@ -1,0 +1,4 @@
+# Spring Boot Configuration for SQL Server
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=CookingAppDB;encrypt=true;trustServerCertificate=true

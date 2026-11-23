@@ -1,0 +1,21 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav" app:startDestination="@id/login">
+    <fragment android:id="@+id/login" android:name="com.cooking.app.activities.LoginFragment"/>
+    <fragment android:id="@+id/register" android:name="com.cooking.app.activities.RegisterFragment"/>
+    <fragment android:id="@+id/reset" android:name="com.cooking.app.activities.ResetFragment"/>
+    <fragment android:id="@+id/discover" android:name="com.cooking.app.activities.DiscoverFragment"/>
+    <fragment android:id="@+id/search" android:name="com.cooking.app.activities.SearchFragment"/>
+    <fragment android:id="@+id/recipe" android:name="com.cooking.app.activities.RecipeFragment"/>
+    <fragment android:id="@+id/cook" android:name="com.cooking.app.activities.CookFragment"/>
+    <fragment android:id="@+id/complete" android:name="com.cooking.app.activities.CompleteFragment"/>
+    <fragment android:id="@+id/favorites" android:name="com.cooking.app.activities.FavoritesFragment"/>
+    <fragment android:id="@+id/edit_recipe" android:name="com.cooking.app.activities.EditRecipeFragment"/>
+    <fragment android:id="@+id/shopping" android:name="com.cooking.app.activities.ShoppingFragment"/>
+    <fragment android:id="@+id/community" android:name="com.cooking.app.activities.CommunityFragment"/>
+    <fragment android:id="@+id/post" android:name="com.cooking.app.activities.PostFragment"/>
+    <fragment android:id="@+id/create_post" android:name="com.cooking.app.activities.CreatePostFragment"/>
+    <fragment android:id="@+id/profile" android:name="com.cooking.app.activities.ProfileFragment"/>
+    <fragment android:id="@+id/edit_profile" android:name="com.cooking.app.activities.EditProfileFragment"/>
+    <fragment android:id="@+id/password" android:name="com.cooking.app.activities.PasswordFragment"/>
+</navigation>

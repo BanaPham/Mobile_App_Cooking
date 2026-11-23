@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/discover" android:icon="@drawable/ic_home" android:title="@string/discover"/>
+    <item android:id="@id/favorites" android:icon="@drawable/ic_heart" android:title="@string/favorites"/>
+    <item android:id="@id/shopping" android:icon="@drawable/ic_bag" android:title="@string/shopping"/>
+    <item android:id="@id/community" android:icon="@drawable/ic_people" android:title="@string/community"/>
+    <item android:id="@id/profile" android:icon="@drawable/ic_person" android:title="@string/profile"/>
+</menu>

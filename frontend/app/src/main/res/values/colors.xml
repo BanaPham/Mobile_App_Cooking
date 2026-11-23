@@ -1,0 +1,13 @@
+<resources>
+    <color name="cream">#FAF7EE</color>
+    <color name="paper">#FFFDF8</color>
+    <color name="forest">#315037</color>
+    <color name="leaf">#49713F</color>
+    <color name="moss">#E9EFE2</color>
+    <color name="orange">#AA4F22</color>
+    <color name="peach">#F6E3D0</color>
+    <color name="ink">#232920</color>
+    <color name="muted">#62685C</color>
+    <color name="line">#DDDCCF</color>
+    <color name="error">#A12126</color>
+</resources>

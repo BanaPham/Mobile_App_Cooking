@@ -1,4 +1,30 @@
-# Spring Boot Configuration for SQL Server
 spring:
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=CookingAppDB;encrypt=true;trustServerCertificate=true
+    url: ${DB_URL:jdbc:sqlserver://localhost:1433;databaseName=CookingAppDB;encrypt=true}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+  mail:
+    host: ${SMTP_HOST:localhost}
+    port: ${SMTP_PORT:587}
+    username: ${SMTP_USERNAME:}
+    password: ${SMTP_PASSWORD:}
+    properties:
+      mail.smtp:
+        auth: ${SMTP_AUTH:true}
+        starttls.enable: ${SMTP_STARTTLS:true}
+        connectiontimeout: 5000
+        timeout: 5000
+        writetimeout: 5000
+server:
+  port: ${PORT:8080}
+app:
+  jwt-secret: ${JWT_SECRET}
+  mail-from: ${SMTP_FROM:}

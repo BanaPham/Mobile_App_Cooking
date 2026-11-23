@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bếp Nhà</string>
+    <string name="discover">Khám phá</string>
+    <string name="favorites">Yêu thích</string>
+    <string name="shopping">Mua sắm</string>
+    <string name="community">Cộng đồng</string>
+    <string name="profile">Cá nhân</string>
+    <string name="back">Quay lại</string>
+    <string name="photo">Ảnh minh họa</string>
+    <string name="loading">Đang tải…</string>
+    <string name="brand_tagline">Món ngon từ căn bếp Việt</string>
+    <string name="new_post">Tạo bài viết mới</string>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <style name="Theme.BepNha" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/leaf</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorPrimaryContainer">@color/moss</item>
+        <item name="colorOnPrimaryContainer">@color/forest</item>
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorSecondaryContainer">@color/peach</item>
+        <item name="colorOnSecondaryContainer">@color/orange</item>
+        <item name="colorSurface">@color/paper</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorOnSurfaceVariant">@color/muted</item>
+        <item name="colorOutline">@color/line</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Widget.BepNha.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:insetTop">4dp</item>
+        <item name="android:insetBottom">4dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

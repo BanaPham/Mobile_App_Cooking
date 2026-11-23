@@ -1,0 +1,10 @@
+.DS_Store
+.gradle/
+**/build/
+**/target/
+local.properties
+.env
+*.iml
+frontend/.idea/
+backend/uploads/
+.kotlin/

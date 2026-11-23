@@ -3,7 +3,8 @@
 -- Hệ quản trị cơ sở dữ liệu: Microsoft SQL Server
 -- =========================================================
 
-CREATE DATABASE CookingAppDB;
+IF DB_ID(N'CookingAppDB') IS NULL
+    EXEC(N'CREATE DATABASE CookingAppDB');
 GO
 
 USE CookingAppDB;
@@ -12,7 +13,7 @@ GO
 -- 1. Phân hệ người dùng và xác thực
 CREATE TABLE Users (
     user_id BIGINT IDENTITY(1,1) PRIMARY KEY,
-    email VARCHAR(254) NULL,
+    email VARCHAR(254) COLLATE Latin1_General_100_CI_AS NOT NULL,
     phone VARCHAR(20) NULL,
     password_hash VARCHAR(255) NOT NULL,
     full_name NVARCHAR(120) NOT NULL,
@@ -21,8 +22,10 @@ CREATE TABLE Users (
     role VARCHAR(20) NOT NULL DEFAULT 'USER', -- USER, ADMIN
     account_status VARCHAR(20) NOT NULL DEFAULT 'ACTIVE', -- ACTIVE, LOCKED
     created_at DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
-    updated_at DATETIME2 NOT NULL DEFAULT SYSDATETIME()
+    updated_at DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
+    CONSTRAINT UQ_Users_Email UNIQUE (email)
 );
+CREATE UNIQUE INDEX UX_Users_Phone ON Users(phone) WHERE phone IS NOT NULL;
 GO
 
 -- 2. Phân hệ công thức và danh mục
